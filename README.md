@@ -40,24 +40,25 @@ The lab provides an isolated and controlled environment for cybersecurity learni
 
 | Component | Configuration |
 |---|---|
-| Host Machine | [Your laptop/PC model] |
-| Host OS | [Your host OS, e.g. Windows 11] |
-| Host RAM | [Your RAM, e.g. 16 GB] |
-| Processor | [Your CPU, e.g. Intel Core i5] |
-| Hypervisor | [VirtualBox version] |
-| Security OS | [Kali Linux version] |
-| Kali RAM | [e.g. 2048 MB] |
+| Host Machine | [LENOVO] |
+| Host OS | [Windows 11] |
+| Host RAM | [8GB] |
+| Processor | [Intel Core i3] |
+| Hypervisor | [VirtualBox 7.2.6] |
+| Security OS | [Kali 2026.2] |
+| Kali RAM | [2048 MB] |
 | Virtual Network | NAT Network |
-| Network Address | [e.g. 10.0.0.0/24] |
-| Kali IP Address | [e.g. 10.0.0.2/24] |
-| Default Gateway | [e.g. 10.0.0.1] |
-| DNS Server | [e.g. 8.8.8.8] |
-| Future VM Range | [e.g. 10.0.0.3–10.0.0.99] |
+| Network Address | [10.0.0.0/24] |
+| Kali IP Address | [10.0.0.2/24] |
+| Default Gateway | [10.0.0.1] |
+| DNS Server | [8.8.8.8] |
+| Future VM Range | [10.0.0.3–10.0.0.99] |
 
 ## Lab Setup Procedure
 
 ### Step 1. Install 7-Zip
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+
 
 ### Step 2. Install VirtualBox
 VirtualBox was installed as the hypervisor.
@@ -67,7 +68,7 @@ A dedicated NAT Network was created in VirtualBox.
 
 **Configuration:**
 - Network Name: `NatNetwork`
-- IPv4 Prefix: `[your subnet]`
+- IPv4 Prefix: `[10.0.0.0/24]`
 - DHCP: Enabled
 - IPv6: Disabled
 
@@ -82,9 +83,9 @@ The Kali Linux virtual machine was downloaded from the official Kali Linux websi
 - Adapter Type: [e.g. Intel PRO/1000 MT Desktop]
 
 **VM resources allocated:**
-- RAM: [e.g. 2048 MB]
-- Processors: [e.g. 2]
-- Video Memory: [e.g. 128 MB]
+- RAM: [2048 MB]
+- Processors: [2]
+- Video Memory: [128 MB]
 
 A shared folder was also configured for transferring files between the host OS and the Kali VM.
 
@@ -92,10 +93,10 @@ A shared folder was also configured for transferring files between the host OS a
 The Kali Linux network configuration was checked and set to a consistent IPv4 address.
 
 **Example configuration:**
-- IP Address: `[your IP]`
+- IP Address: `[10.0.0.2]`
 - Subnet Mask: `255.255.255.0`
-- Gateway: `[your gateway]`
-- DNS: `[your DNS]`
+- Gateway: `[10.0.0.1]`
+- DNS: `[8.8.8.8]`
 
 Network configuration was confirmed via the terminal.
 
@@ -114,15 +115,14 @@ To enable file transfer between host and VM, and a shared clipboard, these featu
 | Test | Command | Expected Result |
 |---|---|---|
 | Check IP address | `ip a` | Correct Kali IP displayed |
-| Test gateway | `ping [gateway]` | Successful replies |
+| Test gateway | `ping [10.0.0.1]` | Successful replies |
 | Test Internet connectivity | `ping 8.8.8.8` | Successful replies |
-| Test DNS resolution | `nslookup [domain]` | Domain resolves |
+| Test DNS resolution | `nslookup networkwalks.com` | Domain resolves |
 | Verify Nmap | `nmap --version` | Nmap version displayed |
 | Verify snapshot | Restore snapshot and run `ip a` | Baseline configuration restored |
 
 ## Problems Encountered & Solutions
 
-[Document any issues you ran into and how you fixed them — e.g. connectivity failures after static IP config, driver issues, snapshot restore problems.]
 
 ## What I Learned
 
@@ -151,13 +151,4 @@ This laboratory is intended strictly for educational purposes only.
 - VirtualBox: https://virtualbox.org/wiki/Downloads
 - Kali Linux: https://kali.org/get-kali
 
-## Author
 
-**[Your Name]**
-[Your role/title, e.g. Cybersecurity Enthusiast]
-
-[Optional: LinkedIn/GitHub link]
-
-## Project Information
-
-Program Name: [if applicable] | Repository: GitHub
