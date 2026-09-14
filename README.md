@@ -58,7 +58,7 @@ The lab provides an isolated and controlled environment for cybersecurity learni
 
 ### Step 1. Install 7-Zip
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
-
+![Project Screenshot](01_Install_7-z.png)
 
 
 ### Step 2. Install VirtualBox
@@ -81,12 +81,12 @@ The Kali Linux virtual machine was downloaded from the official Kali Linux websi
 **Network adapter configuration:**
 - Adapter 1 attached to: NAT Network
 - Network: `NatNetwork`
-- Adapter Type: [e.g. Intel PRO/1000 MT Desktop]
+- Adapter Type: Intel PRO/1000 MT Desktop
 
 **VM resources allocated:**
-- RAM: [2048 MB]
-- Processors: [2]
-- Video Memory: [128 MB]
+- RAM: 2048 MB
+- Processors: 2
+- Video Memory: 128 MB
 
 A shared folder was also configured for transferring files between the host OS and the Kali VM.
 
