@@ -58,7 +58,7 @@ The lab provides an isolated and controlled environment for cybersecurity learni
 
 ### Step 1. Install 7-Zip
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
-![Project Screenshot](01_Install_7-z.png)
+!(01_Install_7-z .png).
 
 
 ### Step 2. Install VirtualBox
