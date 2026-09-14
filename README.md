@@ -40,24 +40,25 @@ The lab provides an isolated and controlled environment for cybersecurity learni
 
 | Component | Configuration |
 |---|---|
-| Host Machine | [LENOVO] |
-| Host OS | [Windows 11] |
-| Host RAM | [8GB] |
-| Processor | [Intel Core i3] |
-| Hypervisor | [VirtualBox 7.2.6] |
-| Security OS | [Kali 2026.2] |
-| Kali RAM | [2048 MB] |
+| Host Machine | LENOVO |
+| Host OS | Windows 11 |
+| Host RAM | 8GB |
+| Processor | Intel Core i3 |
+| Hypervisor | VirtualBox 7.2.6 |
+| Security OS | Kali 2026.2 |
+| Kali RAM | 2048 MB |
 | Virtual Network | NAT Network |
-| Network Address | [10.0.0.0/24] |
-| Kali IP Address | [10.0.0.2/24] |
-| Default Gateway | [10.0.0.1] |
-| DNS Server | [8.8.8.8] |
-| Future VM Range | [10.0.0.3–10.0.0.99] |
+| Network Address | 10.0.0.0/24 |
+| Kali IP Address | 10.0.0.2/24 |
+| Default Gateway | 10.0.0.1 |
+| DNS Server | 8.8.8.8 |
+| Future VM Range | 10.0.0.3–10.0.0.99 |
 
 ## Lab Setup Procedure
 
 ### Step 1. Install 7-Zip
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+
 
 
 ### Step 2. Install VirtualBox
