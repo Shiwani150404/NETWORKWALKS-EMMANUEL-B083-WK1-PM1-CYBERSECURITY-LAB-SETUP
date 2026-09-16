@@ -59,8 +59,6 @@ The lab provides an isolated and controlled environment for cybersecurity learni
 ### Step 1. Install 7-Zip
 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
 
- ![Install 7-Zip](01_install_7zip.png)
-
 ### Step 2. Install VirtualBox
 VirtualBox was installed as the hypervisor.
 
@@ -104,8 +102,6 @@ Network configuration was confirmed via the terminal.
 ### Step 6. Create a Clean VM Snapshot
 After completing the initial configuration, a VirtualBox snapshot was created.
 
-**Snapshot name:** `[your snapshot name]`
-
 This snapshot represents the clean baseline of the lab — if a future exercise changes or damages the VM, it can be restored to this state.
 
 ### Step 7. Configure 'Drag-and-Drop' and 'Shared Clipboard'
@@ -121,9 +117,6 @@ To enable file transfer between host and VM, and a shared clipboard, these featu
 | Test DNS resolution | `nslookup networkwalks.com` | Domain resolves |
 | Verify Nmap | `nmap --version` | Nmap version displayed |
 | Verify snapshot | Restore snapshot and run `ip a` | Baseline configuration restored |
-
-## Problems Encountered & Solutions
-
 
 ## What I Learned
 
@@ -152,4 +145,12 @@ This laboratory is intended strictly for educational purposes only.
 - VirtualBox: https://virtualbox.org/wiki/Downloads
 - Kali Linux: https://kali.org/get-kali
 
+## Author
+
+**[Shiwani Dodke]**
+[Cybersecurity Professional B083]
+
+## Project Information
+
+Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
 
